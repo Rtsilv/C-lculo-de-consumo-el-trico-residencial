@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+    <html>
+     <head>
+        <meta charset="UTF-8">
+        <title> Trabalho de Física </title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap" rel="stylesheet">
+        
+        <script src="script.js"></script>
+    
+    </head>
+        <body>
+            <Header>
+                <img src="coelba-logo-.png">
+                <h1> Cálculo de consumo elétrico residencial </h1>
+            </Header>
+
+            <main>
+                <div class="title">
+                    <h2>Listagem de equipamentos da sua residência (cálculo de consumo diário)</h2>
+                </div>
+
+                <div class="card">
+                    <div class="lineInput">
+                        <label>Equipamento</label>
+                        <input type="text" id="equipamento" placeholder="Nome do equipamento">
+                    </div>
+
+                    <div class="lineInput">
+                        <label>Potência</label>
+                        <input type="number" id="potencia" placeholder="Potência do equipamento">
+                    </div>
+
+                    <div class="lineInput">
+                        <label>Tempo de uso</label>
+                        <input type="number" id="tempo" placeholder="Tempo de uso do aparelho em horas por dia">
+                    </div> 
+
+                    <button onclick="produto.salvar()" id="btn1">Salvar</button>
+                    <button onclick="produto.cancelar()">Cancelar</button>
+
+                    <div class="content">
+                        <table border="1">
+                            <thead>
+                                <th>ID</th>
+                                <th class="center">Equipamento</th>
+                                <th>Potência</th>
+                                <th>Tempo</th>
+                                <th>Energia por dia</th>
+                                <th>Consumo mensal</th>
+                                <th>Ações</th>
+
+                                <tbody id="tbody">
+                                       
+                                </tbody>
+
+                            </thead>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <br>
+                <br>
+
+
+                <div class="title">
+                    <h2>Listagem de equipamentos da sua residência (cálculo de consumo semanal)</h2>
+                </div>
+
+                <div class="card2">
+
+                    <div class="lineInput">
+                        <label>Equipamento</label>
+                        <input type="text" id="equipamento2" placeholder="Nome do equipamento">
+                    </div>
+
+                    <div class="lineInput">
+                        <label>Potência</label>
+                        <input type="number" id="potencia2" placeholder="Potência do equipamento">
+                    </div>
+
+                    <div class="lineInput">
+                        <label>Tempo de uso</label>
+                        <input type="number" id="tempo2" placeholder="Tempo de uso do aparelho em horas por semana">
+                    </div> 
+
+                    <button onclick="produto2.salvar2()" id="btn2">Salvar</button>
+                    <button onclick="produto2.cancelar2()">Cancelar</button>
+
+                    <div class="content2">
+                        <table border="1">
+                            <thead>
+                                <th>ID</th>
+                                <th class="center">Equipamento</th>
+                                <th>Potência</th>
+                                <th>Tempo</th>
+                                <th>Energia</th>
+                                <th>Consumo mensal</th>
+                                <th>Ações</th>
+
+                                <tbody id="tbody2">
+                                       
+                                </tbody>
+
+                            </thead>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <br>
+                <br>
+            
+                <div class="title">
+                    <h2>Consumo total</h2>
+                </div>
+
+                <br>
+
+                <span>Aperte aqui para saber o somatório do consumo de Energia elétrica total da sua residência!</span>
+                <br>
+                <br>
+                <button onclick="listaTabela3()" id="btn3">Imprimir</button>
+                <br>
+
+                <div class="content3">
+                    <table border="1">
+                        <thead>
+                            <th>Total de Energia Mensal (Por dia)</th>
+                            <th class="center">Total de Energia Mensal (Por Semana)</th>
+                            <th>Soma dos totais de Energia Mensal (Dia + Semana)</th>
+
+                            <tbody id="tbody3">
+                                   
+                            </tbody>
+
+                        </thead>
+
+                    </table>
+
+                </div>
+
+            </main>
+
+        </body>
+
+    </html>
